@@ -1,5 +1,5 @@
 <?php
-namespace App\Oop\Inheritance;
+namespace App\Oop;
 
 abstract class Tree
 {

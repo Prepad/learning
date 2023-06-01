@@ -1,7 +1,7 @@
 <?php
-namespace App\Oop\Inheritance;
+namespace App\Oop;
 
-use App\Oop\Inheritance\Tree;
+use App\Oop\Tree;
 
 class Maple extends Tree
 {

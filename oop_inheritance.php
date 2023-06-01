@@ -1,8 +1,8 @@
 <?php
 require_once 'autoloader.php';
 
-use App\Oop\Inheritance\Maple;
-use App\Oop\Inheritance\Pine;
+use App\Oop\Maple;
+use App\Oop\Pine;
 
 $maple = new Maple();
 

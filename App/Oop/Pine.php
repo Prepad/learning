@@ -1,7 +1,7 @@
 <?
-namespace App\Oop\Inheritance;
+namespace App\Oop;
 
-use App\Oop\Inheritance\Tree;
+use App\Oop\Tree;
 
 class Pine extends Tree
 {
