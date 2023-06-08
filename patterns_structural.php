@@ -8,6 +8,8 @@ use App\Patterns\Structural\Bridge\Axe;
 use App\Patterns\Structural\Bridge\Orc;
 use App\Patterns\Structural\Bridge\Human;
 use App\Patterns\Structural\Bridge\Sword;
+use App\Patterns\Structural\Flyweight\Post;
+use App\Patterns\Structural\Flyweight\Postman;
 
 require_once 'autoloader.php';
 
@@ -29,3 +31,11 @@ $human->attack();
 echo '<br>';
 $orc->attack();
 echo '<br>';
+
+$post = new Post(new Postman());
+$post->takePackage('игрушка', 'хуево-кукуево');
+$post->takePackage('торт', 'хуево-кукуево');
+$post->takePackage('подарок', 'хуево-кукуево');
+$post->takePackage('пиво', 'кукуево-хуево');
+$post->takePackage('пицца', 'кукуево-хуево');
+$post->deliver();
