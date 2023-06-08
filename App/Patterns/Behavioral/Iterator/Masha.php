@@ -7,10 +7,9 @@ use App\Patterns\Behavioral\Iterator\Bed;
 
 class Masha implements Countable, Iterator
 {
-    /** @var Bed $stations */
+    /** @var Bed[] $beds */
     protected $beds = [];
 
-    /** @var int $counter */
     protected $counter;
 
     public function addStation(Bed $bed)
