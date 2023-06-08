@@ -11,3 +11,4 @@ echo '<br>';
 echo '<br>';
 echo '<a href="/patterns_generating.php">Порождающие паттерны</a><br>';
 echo '<a href="/patterns_structural.php">Структурные паттерны</a><br>';
+echo '<a href="/patterns_behavioral.php">Поведенческие паттерны</a><br>';
