@@ -5,7 +5,6 @@ use App\Patterns\Structural\Flyweight\Postman;
 
 class Post
 {
-    protected array $toDelivery = [];
     protected Postman $postman;
 
     public function __construct(Postman $postman)
@@ -15,12 +14,12 @@ class Post
 
     function takePackage(string $content, string $address)
     {
-        $this->toDelivery[$address][] = $this->postman->make($content);
+        $this->postman->make($content, $address);
     }
 
     function deliver()
     {
-        foreach ($this->toDelivery as $name => $address) {
+        foreach ($this->postman->getPackages() as $name => $address) {
             echo 'На адрес ' . $name . ' были доставлены посылки: ';
             foreach ($address as $package) {
                 /**@var Package $package */

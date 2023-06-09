@@ -6,7 +6,7 @@ use App\Patterns\Structural\Bridge\Interfaces\Weapon;
 
 class Orc implements Warrior
 {
-    protected $weapon;
+    protected Weapon $weapon;
 
     public function __construct(Weapon $weapon) {
         $this->weapon = $weapon;
